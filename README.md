@@ -3,7 +3,7 @@
 Remote MCP server for TikTok creator discovery and analytics, powered by the Tokfluence API.
 
 - Endpoint: `https://developers.tokfluence.com/mcp` (Streamable HTTP)
-- Auth: OAuth (dynamic client registration) or a Bearer API key from your Tokfluence dashboard (any paid plan)
+- Auth: OAuth sign-in or a Bearer API key from your Tokfluence dashboard (any plan, including Free; calls use your plan's API credits)
 - Tools: 15 (creator search, profiles, audience, engagement, and more)
 
 ## Connect
