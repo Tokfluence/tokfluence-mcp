@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.tokfluence/tokfluence",
+  "title": "Tokfluence",
+  "description": "Search a TikTok creator index, read posts, and save ranked creator lists from your AI agent.",
+  "version": "1.0.0",
+  "websiteUrl": "https://developers.tokfluence.com/docs/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://developers.tokfluence.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if your client supports OAuth sign-in. Otherwise: Bearer <Tokfluence API key, tkf_live_...> (any paid Tokfluence plan).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Tokfluence/tokfluence-mcp",
+    "source": "github"
+  }
+}

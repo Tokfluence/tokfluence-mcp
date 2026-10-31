@@ -1,0 +1,12 @@
+# Reference only. Smithery URL publishing (https://smithery.ai/new) is the path for this remote server:
+# it requires Streamable HTTP + OAuth when auth is required. Tokfluence MCP advertises OAuth
+# (RFC 9728 resource metadata, DCR at /oauth/register, client_id_metadata_document_supported=true),
+# so no config schema / API key is needed. smithery.yaml is only for Smithery-hosted builds.
+# Optional API-key fallback via CLI (not recommended; key = full account, no scopes):
+#   smithery mcp publish "https://developers.tokfluence.com/mcp" -n @tokfluence/tokfluence \
+#     --config-schema '{"type":"object","properties":{"apiKey":{"type":"string","title":"Tokfluence API key","x-from":{"header":"Authorization","prefix":"Bearer "}}}}'
+name: "@tokfluence/tokfluence"
+remote:
+  url: https://developers.tokfluence.com/mcp
+  transport: streamable-http
+  auth: oauth2
