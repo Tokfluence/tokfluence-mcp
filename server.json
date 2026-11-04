@@ -3,7 +3,7 @@
   "name": "com.tokfluence/tokfluence",
   "title": "Tokfluence",
   "description": "Search a TikTok creator index, read posts, and save ranked creator lists from your AI agent.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "websiteUrl": "https://developers.tokfluence.com/docs/mcp",
   "remotes": [
     {
@@ -12,7 +12,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Optional if your client supports OAuth sign-in. Otherwise: Bearer <Tokfluence API key, tkf_live_...> (Requires a Tokfluence developer or paid plan; calls use your plan's API credits).",
+          "description": "Optional if your client supports OAuth sign-in. Otherwise: Bearer <Tokfluence API key, tkf_live_...> (Free accounts include 50 API credits; paid plans add more).",
           "isRequired": false,
           "isSecret": true
         }
